@@ -450,8 +450,8 @@ int main(void) {
 	bit_set(PORTC, BIT(LED2));
 	
 	//Wait for USB to be configured
-	while (!usb_configured()) /* wait */ ;
-	_delay_ms(500);
+	//while (!usb_configured()) /* wait */ ;
+	_delay_ms(1000);
 	
 	//PID
 	pid_multi = 32;
