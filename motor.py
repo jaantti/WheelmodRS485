@@ -8,19 +8,18 @@ def move(dir):
     if dir == -1:
         m.write('1:sd0\n')
         m.write('2:sd0\n')
-    if dir == 0:
+    if dir == 3:
         m.write('1:sd50\n')
+        m.write('2:sd50\n')
+    if dir == 0:
+        m.write('1:sd-50\n')
         m.write('2:sd50\n')
     if dir == 1:
         m.write('1:sd-50\n')
-        m.write('2:sd50\n')
-    if dir == 2:
-        m.write('1:sd-50\n')
         m.write('2:sd-50\n')
-    if dir == 3:
+    if dir == 2:
         m.write('1:sd50\n')
         m.write('2:sd-50\n')
-
 
 '''
 def move(dir):
